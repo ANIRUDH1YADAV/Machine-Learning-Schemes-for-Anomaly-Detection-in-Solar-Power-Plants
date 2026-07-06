@@ -11,13 +11,7 @@ The notebook loads the Plant 1 and Plant 2 generation and weather datasets, merg
 - AE-LSTM autoencoder for sequence reconstruction error
 - BiLSTM autoencoder as a custom extension
 
-The corrected notebook also fixes the main issues in the original implementation:
 
-- Replaces deprecated pandas fill logic with `.ffill().bfill()`
-- Fits the scaler only on training sequences
-- Calibrates anomaly thresholds from training residuals only
-- Computes confusion-matrix metrics for every model
-- Saves processed outputs and comparison CSV files
 
 ## How The Results Relate To The Paper
 
@@ -73,6 +67,3 @@ The best next steps are likely to come from better labels and stronger sequence 
 - `code/final_comparison.csv`
 - `code/IMPLEMENTATION_AUDIT.txt`
 
-## Notebook
-
-The main implementation lives in [code/Untitled1_CORRECTED.ipynb](code/Untitled1_CORRECTED.ipynb).
